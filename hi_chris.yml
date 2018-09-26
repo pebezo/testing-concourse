@@ -1,0 +1,12 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: microsoft/aspnetcore-build}
+
+inputs:
+- name: chris
+  
+run:
+  path: ./run_chris.sh
+  dir: chris
